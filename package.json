@@ -10,10 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/Amazir/ProjectExpandy.git"
   },
-  "author": "Rph <admin@rph.space>",
+  "author": "Rph <admin@rph.space> & Amazir",
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/Amazir/ProjectExpandy/issues"
   },
-  "homepage": "https://github.com/Amazir/ProjectExpandy#readme"
+  "homepage": "https://github.com/Amazir/ProjectExpandy#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "fs-nextra": "^0.3.7",
+    "socket.io": "^2.1.1"
+  }
 }
