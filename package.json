@@ -11,14 +11,16 @@
     "url": "git+https://github.com/Amazir/ProjectExpandy.git"
   },
   "author": "Rph <admin@rph.space> & Amazir",
-  "license": "GPL-2.0",
+  "license": "Propriatory",
   "bugs": {
     "url": "https://github.com/Amazir/ProjectExpandy/issues"
   },
   "homepage": "https://github.com/Amazir/ProjectExpandy#readme",
   "dependencies": {
+    "better-sqlite3": "^4.1.4",
     "express": "^4.16.3",
     "fs-nextra": "^0.3.7",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.1.1",
+    "uuid": "^3.3.2"
   }
 }
