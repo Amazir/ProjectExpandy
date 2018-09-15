@@ -17,7 +17,3 @@ module.exports.socket = {};
 module.exports.socket["test"] = function(data, socket) {
     _expandy.log(data);
 };
-
-module.exports.update = function() {
-    _expandy.log("Tick");
-};

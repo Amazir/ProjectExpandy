@@ -72,6 +72,7 @@ class Msg {
     let io = Socketio.listen(server);
 
     server.listen(global._expandy.config.port);
+    app.use('/static', Express.static('static'));
 
     // Load modules
     await log("Now loading modules...");
