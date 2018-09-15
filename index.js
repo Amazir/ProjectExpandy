@@ -74,10 +74,12 @@ class Msg {
     server.listen(global._expandy.config.port);
     app.use('/static', Express.static('static'));
 
+    await log("\n-=- [MODULES] -=- {");
     // Load modules
     await log("Now loading modules...");
     let fileList = await fs.readdir(path.join(global._expandy.cwd, "expandy_modules"));
 
+    await log("==================================");
     // Go over all modules
     for (let i = 0; i < fileList.length; i++) {
         let expmod = require(path.join(global._expandy.cwd, "expandy_modules", fileList[i])); // Load into memory
@@ -112,10 +114,12 @@ class Msg {
         if (expmod.update) // Define the update event;
             updateEvents.push(expmod.update);
 
-        await log("Loaded");
+        await log("Loaded \n==================================");
+        
     }
 
     await log("Done loading all modules!");
+    await log("}\n");
 
     // Define all socket.io event listeners
     await log("Starting socket event listeners");

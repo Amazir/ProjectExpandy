@@ -9,7 +9,7 @@ module.exports.onload = function() {
 
 module.exports.routes = {get:{}};
 
-module.exports.routes.get["/"] = function(req, res) {
+module.exports.routes.get["/test"] = function(req, res) {
     res.send(">:(");
 };
 
