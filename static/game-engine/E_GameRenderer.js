@@ -1,7 +1,7 @@
 /*
 
     Autor: AmaziR
-    Wersja: 0.0.1
+    Wersja: 0.0.3
     Opis: Ta klasa reprezentuje silnik renderujący.
 
 */
@@ -25,6 +25,17 @@ class Renderer
     {
         arr.forEach(obj => {
             this.rendering.push(obj);
+        });
+    }
+
+    RemoveFromRenderer(id)
+    {
+        var i = 0;
+        this.rendering.forEach(obj => {
+            if(obj.id == id){
+                delete this.rendering[i];
+            }
+            i++;
         });
     }
 

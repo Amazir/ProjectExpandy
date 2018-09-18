@@ -20,7 +20,7 @@ function Init()
     */
     var t = new GameObject();
     t.x = 50;
-    t.y = 50
+    t.y = 50;
     t.setTexture("http://127.0.0.1:3000/static/test.png");
     game.AddGameObject(t);
 
@@ -29,6 +29,11 @@ function Init()
     d.y = 100;
     d.setTexture("http://127.0.0.1:3000/static/test.png");
     game.AddGameObject(d);
+
+    game.input.AddHandler(87, function(){
+        alert("chyba działa");
+    });
+    
     /*
         }
     */
