@@ -24,13 +24,18 @@ class Game
 
     SetupInput()
     {
-        let a = function (e) {
-            this.input.ListenerOnDown(e);
+        let a = function (e,f) {
+            this.input.ListenerOnDown(e,f);
         }
         a = a.bind(this);
 
         $("body").keydown(function(e){
-            a(e);
+            a(e, true);
+            return false;
+        });
+
+        $("body").keyup(function(e){
+            a(e, false);
             return false;
         });
     }

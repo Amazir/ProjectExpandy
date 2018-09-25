@@ -1,1 +1,4 @@
-tutaj będą ustawienia serwera node (socket.io)
+{
+    "M_IPAddress" : "127.0.0.1",
+    "M_Port" : "3001"
+}

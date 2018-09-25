@@ -12,12 +12,17 @@ class InputManager
         this.key_handlers = [];
     }
 
-    ListenerOnDown(e)
+    ListenerOnDown(e, u) // u = true w gorze false w dole
     {
-        this.key_handlers.forEach(element => {
-            if(e.which == element.keyCode)
-                element.fnc();
-        });
+        if(u){
+            this.key_handlers.forEach(element => {
+                if(e.which == element.keyCode)
+                    element.fnc();
+            console.log("przycisk w gorze");
+            });
+        }
+        else 
+            console.log("przycisk w dole");
     }
 
     AddHandler(btnId, fnc)

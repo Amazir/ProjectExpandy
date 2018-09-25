@@ -31,7 +31,7 @@ function Init()
     game.AddGameObject(d);
 
     game.input.AddHandler(87, function(){
-        alert("chyba działa");
+        console.log("qweqweqwe");
     });
     
     /*
